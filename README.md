@@ -51,31 +51,31 @@ This proof of concept project demonstrates a "Discord-oriented" stealer implemen
 
 ### Features:
 
-- [antidebug](https://github.com/hackirby/skuld/blob/main/modules/antidebug/antidebug.go): Terminates debugging tools.
-- [antivirus](https://github.com/hackirby/skuld/blob/main/modules/antivirus/antivirus.go): Disables Windows Defender and blocks access to antivirus websites.
-- [antivm](https://github.com/hackirby/skuld/blob/main/modules/antivm/antivm.go): Detects and exits when running in virtual machines (VMs).
-- [browsers](https://github.com/hackirby/skuld/blob/main/modules/browsers/browsers.go):
+- [antidebug](https://github.com/all0x0/skuld/blob/main/modules/antidebug/antidebug.go): Terminates debugging tools.
+- [antivirus](https://github.com/all0x0/skuld/blob/main/modules/antivirus/antivirus.go): Disables Windows Defender and blocks access to antivirus websites.
+- [antivm](https://github.com/all0x0/skuld/blob/main/modules/antivm/antivm.go): Detects and exits when running in virtual machines (VMs).
+- [browsers](https://github.com/all0x0/skuld/blob/main/modules/browsers/browsers.go):
   - Steals logins, cookies, credit cards, history, and download lists from 37 Chromium-based browsers.
   - Steals logins, cookies, history, and download lists from 10 Gecko browsers.
-- [clipper](https://github.com/hackirby/skuld/blob/main/modules/clipper/clipper.go): Replaces the user's clipboard content with a specified crypto address when copying another address.
-- [commonfiles](https://github.com/hackirby/skuld/tree/main/modules/commonfiles/commonfiles.go): Steals sensitive files from common locations.
-- [discodes](https://github.com/hackirby/skuld/blob/main/modules/discodes/discodes.go): Captures Discord Two-Factor Authentication (2FA) backup codes.
-- [discordinjection](https://github.com/hackirby/skuld/blob/main/modules/discordinjection/injection.go):
+- [clipper](https://github.com/all0x0/skuld/blob/main/modules/clipper/clipper.go): Replaces the user's clipboard content with a specified crypto address when copying another address.
+- [commonfiles](https://github.com/all0x0/skuld/tree/main/modules/commonfiles/commonfiles.go): Steals sensitive files from common locations.
+- [discodes](https://github.com/all0x0/skuld/blob/main/modules/discodes/discodes.go): Captures Discord Two-Factor Authentication (2FA) backup codes.
+- [discordinjection](https://github.com/all0x0/skuld/blob/main/modules/discordinjection/injection.go):
   - Intercepts login, register, and 2FA login requests.
   - Captures backup codes requests.
   - Monitors email/password change requests.
   - Intercepts credit card/PayPal addition requests.
   - Blocks the use of QR codes for login.
   - Prevents requests to view devices.
-- [fakerror](https://github.com/hackirby/skuld/blob/main/modules/fakeerror/fakeerror.go): Trick user into believing the program closed due to an error.
-- [games](https://github.com/hackirby/skuld/blob/main/modules/games/games.go): Extracts Epic Games, Uplay, Minecraft (14 launchers) and Riot Games sessions.
-- [hideconsole](https://github.com/hackirby/skuld/blob/main/modules/hideconsole/hideconsole.go): Module to hide the console.
-- [startup](https://github.com/hackirby/skuld/blob/main/modules/startup/startup.go): Ensures the program runs at system startup.
-- [system](https://github.com/hackirby/skuld/blob/main/modules/system/system.go): Gathers CPU, GPU, RAM, IP, location, saved Wi-Fi networks, and more.
-- [tokens](https://github.com/hackirby/skuld/blob/main/modules/tokens/tokens.go): Extracts tokens from 4 Discord applications, Chromium-based browsers, and Gecko browsers.
-- [uacbypass](https://github.com/hackirby/skuld/blob/main/modules/uacbypass/bypass.go): Grants privileges to steal user data from others users.
-- [wallets](https://github.com/hackirby/skuld/blob/main/modules/wallets/wallets.go): Steals data from 10 local wallets and 55 wallet extensions.
-- [walletsinjection](https://github.com/hackirby/skuld/blob/main/modules/walletsinjection/walletsinjection.go): Captures mnemonic phrases and passwords from 2 crypto wallets.
+- [fakerror](https://github.com/all0x0/skuld/blob/main/modules/fakeerror/fakeerror.go): Trick user into believing the program closed due to an error.
+- [games](https://github.com/all0x0/skuld/blob/main/modules/games/games.go): Extracts Epic Games, Uplay, Minecraft (14 launchers) and Riot Games sessions.
+- [hideconsole](https://github.com/all0x0/skuld/blob/main/modules/hideconsole/hideconsole.go): Module to hide the console.
+- [startup](https://github.com/all0x0/skuld/blob/main/modules/startup/startup.go): Ensures the program runs at system startup.
+- [system](https://github.com/all0x0/skuld/blob/main/modules/system/system.go): Gathers CPU, GPU, RAM, IP, location, saved Wi-Fi networks, and more.
+- [tokens](https://github.com/all0x0/skuld/blob/main/modules/tokens/tokens.go): Extracts tokens from 4 Discord applications, Chromium-based browsers, and Gecko browsers.
+- [uacbypass](https://github.com/all0x0/skuld/blob/main/modules/uacbypass/bypass.go): Grants privileges to steal user data from others users.
+- [wallets](https://github.com/all0x0/skuld/blob/main/modules/wallets/wallets.go): Steals data from 10 local wallets and 55 wallet extensions.
+- [walletsinjection](https://github.com/all0x0/skuld/blob/main/modules/walletsinjection/walletsinjection.go): Captures mnemonic phrases and passwords from 2 crypto wallets.
 
 ## Getting started
 
@@ -90,7 +90,7 @@ To install this project using Git, follow these steps:
 - Clone the Repository:
 
 ```bash
-git clone https://github.com/hackirby/skuld
+git clone https://github.com/all0x0/skuld
 ```
 - Navigate to the Project Directory:
 
@@ -126,7 +126,7 @@ upx.exe --ultra-brute skuld.exe
 ```go
 package main
 
-import "github.com/hackirby/skuld/modules/hideconsole"
+import "github.com/all0x0/skuld/modules/hideconsole"
 
 func main() {
   hideconsole.Run()
@@ -177,18 +177,18 @@ reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "Realtek HD A
 You can do it by running this [.bat script](https://github.com/TairikuOokami/Windows/blob/main/Microsoft%20Defender%20Enable.bat) (I'm not the developer behind it, make sure the file does not contain malware)
 
 ## Contributing
-Contributions to this project are welcome! Feel free to open issues, submit pull requests, or suggest improvements. Make sure to follow the [Contributing Guidelines](https://github.com/hackirby/skuld/blob/main/CONTRIBUTING.md)
+Contributions to this project are welcome! Feel free to open issues, submit pull requests, or suggest improvements. Make sure to follow the [Contributing Guidelines](https://github.com/all0x0/skuld/blob/main/CONTRIBUTING.md)
 
 You can also support this project development by leaving a star ⭐ or by donating me. Every little tip helps!
 
-<a href='https://ko-fi.com/hackirby'><img src='.github/assets/kofi.png' width=150></a>
+<a href='https://ko-fi.com'><img src='.github/assets/kofi.png' width=150></a>
 
 ## License
 This library is released under the MIT License. See LICENSE file for more informations.
 
 ## Contact
-If you have any questions or need further assistance, please contact [@hackirby:matrix.org
-](https://matrix.to/#/@hackirby:matrix.org)
+If you have any questions or need further assistance, please contact [@overlarp
+](https://t.me/@overlarp)
 
 ## Acknowledgments
 This project has been greatly influenced by numerous infostealers available on GitHub. Many functions and sensitive paths have been derived from public repositories. My objective was to innovate by creating something new with code from existing projects. I extend my gratitude to all those whose work has contributed to this stealer, especially
